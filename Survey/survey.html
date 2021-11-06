@@ -1,0 +1,86 @@
+<style>
+    body{
+        background-color: aquamarine;
+    }
+    h1 {
+        text-align: center;
+    }
+    form{
+        text-align: center;
+        font-size: 25px;   
+    }
+    input{
+        font-size: 20px;
+    }
+    #description {
+        text-align: center;
+    }
+</style>
+
+<h1 id="title">Survey: </h1>
+
+<form>
+<label id="description" >This is a survey to know how must of the people will react.</label>
+</form>
+
+<form id="survey-form">
+    <label>Add your name:</labele>
+    <input id="name" placeholder="Enter your name" required>
+    <label>Add your email address:</label>
+    <input id="email" type=" email" pattern=".+@.+" size="30" placeholder="example@123.net" required>
+    <label>Add your phone number:</label>
+    <input id="number" type="number" placeholder="999-999-9999" min="1000000000" max="9999999999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    <p id="name-label">The name field is for us to save whom is answering the survey.</p>
+    <p id="email-label">The email field is for us to comprobe you are a human and not a robot.</p>
+    <p id="number-label">The number is for reference as well, so we can get back with you in case we need to do it.</p>   
+
+    <label>Gender:</label>
+    <label for="dropdown"></label>
+    <select name="gender" id="dropdown" style="font-size: 20px;">
+        <option value="Male" >Male</opion>
+        <option value="Female">Female</option>
+    </select>
+
+    <div>
+        <label>Please select your main Lenguage:</label>
+        <label><input type="radio" name="Lenguage">English</label>
+        <label><input type="radio" name="Lenguage">Spanish</label>
+    </div>
+
+    <p>
+        <div>
+            <label>Do you know about forgein opportunities for work?</label>
+            <label for="first"><input id="first" type="checkbox" name="first"> Yes</label>
+            <label for="first"><input id="first" type="checkbox" name="first"> No</label>
+        </div>
+        <div>
+            <label>Are you interesting in getting one of this opportunities?</label>
+            <label for="second"><input id="second" type="checkbox" name="second"> Yes</label>
+            <label for="second"><input id="second" type="checkbox" name="second"> No</label>
+        </div>
+        <div>
+            <label>Did you know that there are a lot of posibilities that do not required more than invested time?</label>
+            <label for="third"><input id="third" type="checkbox" name="third"> Yes</label>
+            <label for="third"><input id="third" type="checkbox" name="third"> No</label>
+        </div>
+        <div>
+            <label>Would you like working from home and not waking up as early as must of the people?</label>
+            <label for="fourth"><input id="fourth" type="checkbox" name="fourth"> Yes</label>
+            <label for="fourth"><input id="fourth" type="checkbox" name="fourth"> No</label>
+        </div>
+        <div>
+            <label>Do you know about the salaries you could be earning by working directly for another country?</label>
+            <label for="fifth"><input id="fifth" type="checkbox" name="fifth"> Yes</label>
+            <label for="fifth"><input id="fifth" type="checkbox" name="fifth"> No</label>
+        </div>
+    </p>
+
+    <div><p>
+        <label>Do you have additional comments?</label>
+        <input id="textarea">
+    </p></div>
+
+    <div>
+        <button id="submit">submit</button>
+    </div>
+</form>

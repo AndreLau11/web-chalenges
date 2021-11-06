@@ -1,0 +1,63 @@
+<style>
+    body{
+        background-color: turquoise;
+        font-size: 20px;
+    }
+    input{
+        font-size: 20px;
+    }
+    header{
+        text-align: center;
+          }
+    #video{
+        @media screen 
+            (min-width: 350px) { width: "300"; height: "250"}
+    }
+    #header-img{
+        @media (min-width: 350px) {width: "300"; height: "250"}
+    }
+    li{
+        display: flex;
+        align-items: baseline;
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        padding: 1em;
+    }
+</style>
+
+<header id="header">
+    <h1>Anime</h1>
+    <img id="header-img" src="https://p4.wallpaperbetter.com/wallpaper/777/893/228/cropped-bunny-ears-anime-girls-wallpaper-preview.jpg">
+    <nav id="nav-bar">
+        <h3 style="text-align: left;"><p>Navegator</p></h3>
+        <ul>
+            <li><a class="nav-link" href="#video-title">Video</a></li>
+            <li><a class="nav-link" href="#contact-information">Contact Information</a></li>
+            <li><a class="nav-link" href="#credits">Credits</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h3 id="video-title">Video</h3>
+        <p>This video is an omanage to the anime industry.</p>
+        <iframe id=:video width="1280" height="720" src="https://www.youtube.com/embed/aqFnVvvxiJg?list=RDaqFnVvvxiJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <form id="form">
+        <h3 id="contact-information">Contact Information:</h3>
+        <p><div>
+            <label>Enter your email:</label>
+            <input type="email" pattern=".+@.+" size="30" placeholder="example@123.net">
+        </div></p>
+        <div>
+            <h3 id="credits">Credits</h3>
+            <p>This page was created by Hector Lau.</p>
+        </div>
+        <div>
+            <input type="submit" value="submit" id="submit" href:"https://www.freecodecamp.com/email-submit)">
+        </div>
+    </form>
+</body>
