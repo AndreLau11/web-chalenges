@@ -1,0 +1,55 @@
+<style>
+    h1{
+        text-align: center;
+    }
+    p, li{
+        font-size: 22px;
+    }
+    #welcome-text{
+        font-size: 30px;
+    }
+    @media screen and (min-width: 300px) {
+        #container {
+            display: grid;
+            grid-template-columns: 20% auto;
+        }
+    }
+    #navbar{position: fixed;}
+    #nav{background-color: mediumturquoise;}
+    #welcome{background-color: skyblue;}
+    #his{background-color: aqua;
+    text-align: center;
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/5}
+    body{background-color: aqua;}
+</style>
+
+<div id="container">
+    <div id="nav">
+<nav id="navbar">
+    <h1>Navegator</h1>
+    <p>This area takes to a different sections on this page:</p>
+    <li><a href="#welcome-section">Welcome</a></li>
+    <li><a href="#history">History</a></li>
+</nav>
+</div>
+
+<div id="welcome">
+<section id="welcome-section">
+    <h1>Welcome to my Profile...!</h1>
+    <p id="welcome-text">This page contains all the necessary information so you can know more about my experience and how I can get you where you want to get with your page.</p>
+</section>
+</div>
+
+<div id="his">
+<section id="projects">
+    <h2 class="project-tile">My very first project</h2>
+    <p>My very fist project is <a href="https://github.com/AndreLau11/web-chalenges/tree/main/Technical_Documentation" target=" ">technical document.</a></p>
+</section>
+<section id="history">
+    <h2>History</h2>
+    <p>This is a link where you can easly go to my profile on <a id="profile-link" href="https://github.com/AndreLau11" target=" ">GitHub.</a></p>
+</section>
+</div>
+</div>
